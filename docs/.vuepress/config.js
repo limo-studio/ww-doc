@@ -28,13 +28,13 @@ function getFunctionSidebar (groupBasic, groupSystem, groupStock, groupProduct, 
       children: [
         'basic/',
         'basic/dict',
+        'basic/line',
         'basic/customer',
+        'basic/referral',
         'basic/category',
         'basic/warehouse',
         'basic/location',
-        'basic/referral',
-        'basic/supplier',
-        'basic/line'
+        'basic/supplier'
       ]
     },
     {
