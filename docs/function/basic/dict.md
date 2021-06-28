@@ -8,7 +8,7 @@
 :::
 
 ## 功能预览
-![Dict](/dict/dict.png)
+![Dict](/basic/dict/dict.png)
 - 左侧字典列表，`搜索、列表、分页`，功能有：`新增`、`编辑`、`删除`
 - 右侧字典详情，功能有：`新增`、`编辑`、`删除`
 - 鼠标左键点击左侧某字典，右侧字典详情自动显示当前字典的详情，可以编辑和删除操作
@@ -17,15 +17,15 @@
   - **系统字典不能删除，只可以修改详情。而业务字典可以删除**
 
 ## 新增字典
-![Dict](/dict/dict-add.png)
+![Dict](/basic/dict/dict-add.png)
 
 ## 修改字典-业务类型
-![Dict](/dict/dict-edit.png)
+![Dict](/basic/dict/dict-edit.png)
 
 ## 修改字典-系统类型
-![Dict](/dict/dict-edit-system.png)
+![Dict](/basic/dict/dict-edit-system.png)
 - 选择系统类型后，不可修改回业务类型。如果想改成业务类型，请关闭对话框再次重新打开。
 
 ## 修改详情
-![Dict](/dict/dict-detail-edit.png)
+![Dict](/basic/dict/dict-detail-edit.png)
 - 字典详情中排序是为了在其他模块显示字典的顺序，比如订单状态下拉列表，会按照Sort从小到大的排序方式显示。

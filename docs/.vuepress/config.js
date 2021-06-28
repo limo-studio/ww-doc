@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'W&W ERP Doc',
-  description: 'Just playing around',
+  title: 'W&W ERP',
+  description: 'Document Center',
   plugins: ['@vuepress/back-to-top'],
   // Header导航
   themeConfig: {
@@ -42,11 +42,11 @@ function getFunctionSidebar (groupBasic, groupSystem, groupStock, groupProduct, 
       collapsable: true,
       children: [
         'system/',
-        'system/user',
-        'system/role',
-        'system/menu',
         'system/department',
-        'system/job'
+        'system/job',
+        'system/menu',
+        'system/role',
+        'system/user'
       ]
     },
     {
