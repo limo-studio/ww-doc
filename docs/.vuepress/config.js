@@ -8,7 +8,7 @@ module.exports = {
     nav: require('./nav/zh'),
     displayAllHeaders: true,
     sidebar: {
-      '/function/': getFunctionSidebar('基础管理', '系统管理', '库存管理', '商品管理', '订单管理', '打印管理', '报表管理', '售后管理', '监控管理', '财务管理'),
+      '/function/': getFunctionSidebar('基础管理', '系统管理', '商品管理', '库存管理', '订单管理', '打印管理', '报表管理', '售后管理', '监控管理', '财务管理'),
       '/overview/': getOverviewSidebar(),
       '/framework/': getFrameworkSidebar(),
       '/deploy/': getDeploySidebar()
@@ -20,7 +20,7 @@ module.exports = {
   ]
 }
 
-function getFunctionSidebar (groupBasic, groupSystem, groupStock, groupProduct, groupOrder, groupPrint, groupReport, groupAftersale, groupMonitor, groupFinance) {
+function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, groupOrder, groupPrint, groupReport, groupAftersale, groupMonitor, groupFinance) {
   return [
     {
       title: groupBasic,
@@ -50,20 +50,21 @@ function getFunctionSidebar (groupBasic, groupSystem, groupStock, groupProduct, 
       ]
     },
     {
-      title: groupStock,
-      collapsable: true,
-      children: [
-        'stock/',
-        'stock/stockIn'
-      ]
-    },
-    {
       title: groupProduct,
       collapsable: true,
       children: [
         'product/',
         'product/product',
         'product/productFile'
+      ]
+    },
+    {
+      title: groupStock,
+      collapsable: true,
+      children: [
+        'stock/',
+        'stock/stock',
+        'stock/stockIn'
       ]
     },
     {
