@@ -8,7 +8,7 @@ module.exports = {
     nav: require('./nav/zh'),
     displayAllHeaders: true,
     sidebar: {
-      '/function/': getFunctionSidebar('基础管理', '系统管理', '商品管理', '库存管理', '订单管理', '打印管理', '报表管理', '售后管理', '监控管理', '财务管理'),
+      '/function/': getFunctionSidebar('基础管理', '系统管理', '商品管理', '库存管理', '订单管理', '打印管理', '财务管理', '售后管理', '报表管理', '监控管理'),
       '/overview/': getOverviewSidebar(),
       '/framework/': getFrameworkSidebar(),
       '/deploy/': getDeploySidebar()
@@ -20,7 +20,7 @@ module.exports = {
   ]
 }
 
-function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, groupOrder, groupPrint, groupReport, groupAftersale, groupMonitor, groupFinance) {
+function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, groupOrder, groupPrint, groupFinance, groupAftersale, groupReport, groupMonitor) {
   return [
     {
       title: groupBasic,
@@ -85,14 +85,11 @@ function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, 
       ]
     },
     {
-      title: groupReport,
+      title: groupFinance,
       collapsable: true,
       children: [
-        'report/',
-        'report/driverReport',
-        'report/pickupReport',
-        'report/sellerReport',
-        'report/salesProfit'
+        'finance/',
+        'finance/payment'
       ]
     },
     {
@@ -104,6 +101,17 @@ function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, 
       ]
     },
     {
+      title: groupReport,
+      collapsable: true,
+      children: [
+        'report/',
+        'report/driverReport',
+        'report/pickupReport',
+        'report/sellerReport',
+        'report/salesProfit'
+      ]
+    },
+    {
       title: groupMonitor,
       collapsable: true,
       children: [
@@ -111,14 +119,6 @@ function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, 
         'monitor/log',
         'monitor/errLog',
         'monitor/onlineUser'
-      ]
-    },
-    {
-      title: groupFinance,
-      collapsable: true,
-      children: [
-        'finance/',
-        'finance/payment'
       ]
     }
   ]
