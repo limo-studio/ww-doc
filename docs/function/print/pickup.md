@@ -23,15 +23,16 @@
 - `Post拣货单（Post）`，拣货单Post。Post的拣货单不再可以删除。同时可以继续进行装车单，配送单的打印了。此时拣货单状态更新成`Posted`，对应的订单都更新成`Posted`。
 
 **按钮跟着拣货单状态而不同，具体如下表所示**
+- 这几个按钮会一直可用，不管拣货单状态是什么：[View](#view)，[Outsourced goods](#outsourced-goods)，[Loading orders](#loading-orders)，[Delivery note](#delivery-note)，[Inovice](#inovice)
 
 |  拣货单状态 |   可用按钮  |   禁用或不显示按钮  |   对订单状态影响  |
 |  --- |   ---  |   ---  |   ---  |
-|  `Printed`  | [View](#view)<br>[Delete](#delete)<br>[Finish](#finish) | [Outsourced goods](#outsourced-goods)<br>[Loading orders](#loading-orders)<br>[Delivery note](#delivery-note)<br>[Inovice](#inovice)<br>[Check](#check)<br>[Post](#post) | 此时订单状态是`Picking`<br>请参考[订单状态](../order/order#订单状态流转说明) |
-|  `Picked`  | [View](#view)<br>[Delete](#delete)<br>[Check](#check) | [Outsourced goods](#outsourced-goods)<br>[Loading orders](#loading-orders)<br>[Delivery note](#delivery-note)<br>[Inovice](#inovice)<br>[Finish](#finish)<br>[Post](#post) | 此时订单状态是`Picked`<br>请参考[订单状态](../order/order#订单状态流转说明) |
-|  `Checked`  | [View](#view)<br>[Delete](#delete)<br>[Post](#post) | [Outsourced goods](#outsourced-goods)<br>[Loading orders](#loading-orders)<br>[Delivery note](#delivery-note)<br>[Inovice](#inovice)<br>[Finish](#finish)<br>[Check](#check) | 此时订单状态是`Checked`<br>请参考[订单状态](../order/order#订单状态流转说明) |
-|  `Posted`  | [View](#view)<br>[Outsourced goods](#outsourced-goods)<br>[Loading orders](#loading-orders)<br>[Delivery note](#delivery-note)<br>[Inovice](#inovice) | [Check](#check)<br>[Post](#post)<br>[Delete](#delete)<br>[Finish](#finish) | 此时订单状态是`Posted`<br>请参考[订单状态](../order/order#订单状态流转说明) |
-|  `Deleted`  | [View](#view)<br>[Delete](#delete)<br>[Finish](#finish) | [Outsourced goods](#outsourced-goods)<br>[Loading orders](#loading-orders)<br>[Delivery note](#delivery-note)<br>[Inovice](#inovice)<br>[Check](#check)<br>[Post](#post) | 此时订单状态是`Created`<br>请参考[订单状态](../order/order#订单状态流转说明) |
-
+|  `Printed`  | [Delete](#delete)<br>[Finish](#finish)<br>| [Check](#check)<br>[Post](#post)  | 对订单状态无影响<br>[订单状态](../order/order#订单状态流转说明)是`Pending` |
+|  `Picked`  | [Delete](#delete)<br>[Check](#check) | [Finish](#finish)<br>[Post](#post) | 同上↑ |
+|  `Checked`  | [Delete](#delete)<br>[Post](#post) | [Finish](#finish)<br>[Check](#check) | 同上↑ |
+|  `Posted`  | - | [Check](#check)<br>[Post](#post)<br>[Delete](#delete)<br>[Finish](#finish) | 订单会被批量Post<br>[订单状态](../order/order#订单状态流转说明)是`Posted` |
+|  `Deleted`  | - | [Check](#check)<br>[Post](#post) | 对订单状态无影响 |
+- **请注意，同一个订单如果多次打印拣货单，即使多个拣货单都Post，那此订单也只会Post一次。**
 
 ## View
 ![](/print/pickup-view.png)

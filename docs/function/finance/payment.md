@@ -28,6 +28,7 @@
 ## 修改
 ![](/finance/orderPayment-edit.png)
 - 未Post前都是可以修改的。
+- **支票的状态，系统会自动帮助修改，目前设定为：Deposit后的3个工作日自动变成Fulfilled**
 
 ## Post
 - Post时会有确认弹出框。
