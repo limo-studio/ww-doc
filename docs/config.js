@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/ww-doc/',
   title: 'W&W ERP',
   description: 'Document Center',
   plugins: ['@vuepress/back-to-top'],

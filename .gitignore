@@ -20,8 +20,6 @@ selenium-debug.log
 *.sln
 *.local
 
-package-lock.json
-yarn.lock
 .classpath
 .project
 webapp/WEB-INF/classes/
