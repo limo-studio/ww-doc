@@ -6,7 +6,7 @@ module.exports = {
   // Header导航
   themeConfig: {
     // navbar: false,
-    nav: require('./.vuepress/nav/zh'),
+    nav: require('./nav/zh'),
     displayAllHeaders: true,
     sidebar: {
       '/function/': getFunctionSidebar('基础管理', '系统管理', '商品管理', '库存管理', '订单管理', '打印管理', '财务管理', '售后管理', '报表管理', '监控管理'),
@@ -16,8 +16,8 @@ module.exports = {
     }
   },
   extraWatchFiles: [
-    '.vuepress/nav/en.js',
-    '.vuepress/nav/zh.js'
+    'nav/en.js',
+    'nav/zh.js'
   ]
 }
 
