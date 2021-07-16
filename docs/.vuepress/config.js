@@ -47,7 +47,8 @@ function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, 
         'system/job',
         'system/menu',
         'system/role',
-        'system/user'
+        'system/user',
+        'system/config'
       ]
     },
     {
