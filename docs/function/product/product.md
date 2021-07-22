@@ -9,7 +9,7 @@
 ## 功能预览
 ![](/product/product.png)
 - 列表，`搜索、列表、分页`，功能有：`新增`、`编辑`、`删除`
-- Status是个切换开关，可以决定是否禁用
+- 列表调整，显示设定的几个价格
 
 ## 新增商品-基本信息
 ![](/product/product-add-basic.png)
@@ -19,6 +19,7 @@
 - Sell Price 1~5，是根据客户不同星级而设定的不同的价格。
 - Limit Price 1~5，是不同星级的最低限价。按设定来说，限价要低于对应的售价。
 - Base Info页的所有属性都是必填项。
+- 增加进货价 Purchase Price，在库存扣成负的，不知真正进货价的时候使用。
 
 ## 新增商品-属性信息
 ![](/product/product-add-attr.png)

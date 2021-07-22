@@ -91,7 +91,8 @@ function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, 
       collapsable: true,
       children: [
         'finance/',
-        'finance/payment'
+        'finance/payment',
+        'finance/creditFlow'
       ]
     },
     {
@@ -109,7 +110,6 @@ function getFunctionSidebar (groupBasic, groupSystem, groupProduct, groupStock, 
         'report/',
         'report/driverReport',
         'report/pickupReport',
-        'report/sellerReport',
         'report/salesProfit'
       ]
     },
